@@ -638,6 +638,18 @@ PRODUCT_PACKAGES += \
     libnl \
     libwfdaac_vendor
 
+PRODUCT_BOOT_JARS += \
+    WfdCommon
+
 #WLAN
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/wlan/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/WCNSS_qcom_cfg.ini
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    debug.sf.enable_hwc_vds=0 \
+    persist.debug.wfd.enable=1 \
+    persist.sys.wfd.virtual=0
+
+# Zygote
+PRODUCT_PROPERTY_OVERRIDES += \
+    zygote.critical_window.minute=10

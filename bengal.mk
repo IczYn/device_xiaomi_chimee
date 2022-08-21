@@ -39,6 +39,14 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 PRODUCT_PACKAGES += \
     fs_config_files
 
+# AAPT
+PRODUCT_AAPT_CONFIG := normal
+PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+
+# Async MTE on system_server
+PRODUCT_SYSTEM_PROPERTIES += \
+    arm64.memtag.process.system_server=off
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \

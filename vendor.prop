@@ -24,8 +24,6 @@ ro.qc.sdk.audio.fluencetype=fluence
 ro.qc.sdk.audio.ssr=false
 ro.vendor.audio.sdk.fluencetype=fluence
 ro.vendor.audio.sdk.ssr=false
-tunnel.audio.encode=true
-use.voice.path.for.pcm.voip=true
 vendor.audio.adm.buffering.ms=2
 vendor.audio.dolby.ds2.enabled=false
 vendor.audio.dolby.ds2.hardbypass=false
@@ -166,7 +164,6 @@ debug.sf.hw=0
 persist.demo.hdmirotationlock=false
 persist.sys.sf.color_mode=9
 debug.sf.latch_unsignaled=0
-dev.pm.dyn_samplingrate=1
 persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=2
 ro.hardware.egl=adreno
@@ -203,7 +200,6 @@ vendor.gralloc.secure_preview_buffer_format=420_sp
 
 # Google WFD settings
 persist.debug.wfd.enable=1
-debug.sf.enable_hwc_vds=1
 persist.sys.wfd.virtual=0
 
 # Keystore
@@ -213,17 +209,6 @@ keyguard.no_require_sim=true
 # Media
 debug.stagefright.ccodec=1
 debug.stagefright.omx_default_rank=0
-media.aac_51_output_enabled=true
-media.settings.xml=/vendor/etc/media_profiles_vendor.xml
-media.stagefright.enable-aac=true
-media.stagefright.enable-http=true
-media.stagefright.enable-player=true
-media.stagefright.enable-qcp=true
-media.stagefright.enable-scan=true
-media.stagefright.thumbnail.prefer_hw_codecs=true
-qcom.hw.aac.encoder=true
-ro.media.recorder-max-base-layer-fps=60
-persist.mm.enable.prefetch=true
 vendor.mm.enable.qcom_parser=16777215
 
 # NFC

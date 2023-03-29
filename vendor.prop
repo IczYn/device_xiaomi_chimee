@@ -243,7 +243,8 @@ persist.vendor.console.silent.config=1
 persist.radio.multisim.config=dsds
 keyguard.no_require_sim=true
 ro.telephony.default_network=22,20
-ro.com.android.dataroaming=true
+#its already defined in rom source
+#ro.com.android.dataroaming=true
 ro.vendor.use_data_netmgrd=true
 persist.data.netmgrd.qos.enable=true
 persist.vendor.data.mode=concurrent

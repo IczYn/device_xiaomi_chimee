@@ -509,8 +509,9 @@ PRODUCT_PACKAGES += \
     init.qcom.post_boot.sh \
     init.qcom.sh \
     init.qcom.usb.sh \
+    init.qti.media.sh \
     init.qti.dcvs.sh \
-    init.qti.media.sh
+    init.qti.early_init.sh
 
 PRODUCT_PACKAGES += \
     init.qcom.factory.rc \

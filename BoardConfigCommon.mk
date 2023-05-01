@@ -205,11 +205,10 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2022-05-01
+VENDOR_SECURITY_PATCH := 2023-02-01
 
 # Sensors
 USE_SENSOR_MULTI_HAL := true
-
 # Touchpanel
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 

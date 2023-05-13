@@ -8,18 +8,29 @@
 $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
 # Inherit some common Derpfest stuff stuff.
-$(call inherit-product, vendor/proton/config/common.mk)
-TARGET_BOOT_ANIMATION_RES := 1080
-PROTON_BUILD_VARIANT := OFFICIAL
-TARGET_FACE_UNLOCK_SUPPORTED := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# GAPPS flag
+WITH_GAPPS := true
+#TARGET_CORE_GAPPS := true
+
+# Alpha prop
+
+ALPHA_MAINTAINER := ash(hac4us)
+
+# Alpha device prop
 TARGET_ENABLE_BLUR := true
+TARGET_INCLUDE_MATLOG := false
+TARGET_USE_GRAPHENE_CAMERA := true
+TARGET_USE_PIXEL_LAUNCHER := false
+TARGET_EXCLUDES_AUDIOFX := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := proton_citrus
+PRODUCT_NAME := lineage_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3
 PRODUCT_MANUFACTURER := Xiaomi
-PRODUCT_SYSTEM_NAME := citrus
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

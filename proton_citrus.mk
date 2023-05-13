@@ -8,18 +8,18 @@
 $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
 # Inherit some common Derpfest stuff stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/proton/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-DERP_BUILDTYPE := Official
-USE_LEGACY_BOOTANIMATION := true
+PROTON_BUILD_VARIANT := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_citrus
+PRODUCT_NAME := proton_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3
 PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_SYSTEM_NAME := citrus
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi

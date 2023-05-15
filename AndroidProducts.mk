@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/derp_citrus.mk \
-    $(LOCAL_DIR)/derp_lime.mk
+    $(LOCAL_DIR)/octavi_citrus.mk \
+    $(LOCAL_DIR)/octavi_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    derp_citrus-user \
-    derp_citrus-userdebug \
-    derp_citrus-eng \
-    derp_lime-user \
-    derp_lime-userdebug \
-    derp_lime-eng
+    octavi_citrus-user \
+    octavi_citrus-userdebug \
+    octavi_citrus-eng \
+    octavi_lime-user \
+    octavi_lime-userdebug \
+    octavi_lime-eng

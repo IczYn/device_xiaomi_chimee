@@ -8,15 +8,19 @@
 $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 
 # Inherit some common Derpfest stuff stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
+$(call inherit-product, vendor/cherish/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-DERP_BUILDTYPE := Official
-USE_LEGACY_BOOTANIMATION := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
 
+# Maintainer Stuff
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    ro.cherish.maintainer=ash(hac4us)
+#Gapps
+WITH_GMS := true
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_citrus
+PRODUCT_NAME := cherish_citrus
 PRODUCT_DEVICE := citrus
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := POCO M3

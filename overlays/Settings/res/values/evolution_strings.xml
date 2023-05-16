@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023-2024 Evolution X
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- ROM maintainer name -->
+    <string name="build_maintainer_summary">ash(hac4us)</string>
+    <string name="build_maintainer_telegram">https://t.me/hac4us</string>
+
+</resources>

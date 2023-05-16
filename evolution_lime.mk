@@ -7,16 +7,14 @@
 # Inherit from lime device
 $(call inherit-product, device/xiaomi/chime/device-lime.mk)
 
-# Inherit some common Derpfest stuff.
-$(call inherit-product, vendor/derp/config/common_full_phone.mk)
-USE_LEGACY_BOOTANIMATION := true
-DERP_BUILDTYPE := Official
+# Inherit some common Evolution X stuff.
+$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := derp_lime
+PRODUCT_NAME := evolution_lime
 PRODUCT_DEVICE := lime
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi 9T

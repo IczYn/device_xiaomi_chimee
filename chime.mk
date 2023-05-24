@@ -41,19 +41,6 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# Add missing classes
-PRODUCT_PACKAGES += \
-    pasrservice \
-    PerformanceMode \
-    PowerSaveMode \
-    workloadclassifier \
-    QPerformance \
-    QXPerformance \
-    UxPerformance
-#add more
-#PRODUCT_BOOT_JARS += QPerformance UxPerformance
-# will pull QXPerformance later as not needed rn
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \

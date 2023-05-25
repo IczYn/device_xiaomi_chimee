@@ -29,10 +29,6 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
 
-# Fastboot
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Flatten APEXs for performance
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
@@ -125,20 +121,22 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.btconfigstore@1.0.vendor \
     vendor.qti.hardware.btconfigstore@2.0.vendor
 
-# Fastboot
-PRODUCT_PACKAGES += \
-    fastbootd
-
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-service_64 \
     android.hardware.camera.provider@2.4-impl \
-    vendor.qti.hardware.camera.device@1.0.vendor \
-    vendor.qti.hardware.camera.postproc@1.0.vendor \
+    android.hardware.camera.provider@2.4-service_64 \
     libcamera2ndk_vendor \
     libdng_sdk.vendor \
-    libstdc++.vendor \
-    libgui_vendor
+    libgui_vendor \
+    vendor.qti.hardware.camera.device@1.0.vendor \
+    vendor.qti.hardware.camera.postproc@1.0.vendor
+PRODUCT_PACKAGES += \
+    libstdc++.vendor
+
+# Consumer IR
+PRODUCT_PACKAGES += \
+    android.hardware.ir@1.0-impl \
+    android.hardware.ir@1.0-service
 
 # Component overrides
 PRODUCT_COPY_FILES += \
@@ -149,10 +147,31 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
     android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
+    android.hardware.memtrack@1.0-service
+
+PRODUCT_PACKAGES += \
+    libdisplayconfig.qti \
+    libdisplayconfig.qti.vendor \
+    libdisplayconfig.system.qti \
+    libqdMetaData \
+    libqdMetaData.system \
+    libsdmcore \
+    libsdmutils \
+    libtinyxml
+
+PRODUCT_PACKAGES += \
+    libvulkan
+
+PRODUCT_PACKAGES += \
+    gralloc.bengal \
+    memtrack.bengal
+
+PRODUCT_PACKAGES += \
     vendor.display.config@1.0 \
-    vendor.display.config@1.5 \
     vendor.display.config@1.11.vendor \
+    vendor.display.config@1.14 \
+    vendor.display.config@1.15.vendor \
+    vendor.display.config@1.5 \
     vendor.display.config@1.9.vendor \
     vendor.display.config@2.0 \
     vendor.display.config@2.0.vendor \
@@ -170,24 +189,16 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor \
     vendor.qti.hardware.display.mapperextensions@1.0.vendor \
-    vendor.qti.hardware.display.mapperextensions@1.1.vendor\
-    memtrack.bengal \
-    gralloc.bengal \
-    hwcomposer.bengal \
-    libdisplayconfig \
-    libqdMetaData \
-    libqdMetaData.system \
-    libsdmcore \
-    libsdmutils \
-    libtinyxml
-
-PRODUCT_PACKAGES += \
-    libvulkan
+    vendor.qti.hardware.display.mapperextensions@1.1.vendor
 
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4.vendor \
     android.hardware.drm-service.clearkey
+
+# Fastboot
+PRODUCT_PACKAGES += \
+    fastbootd
 
 # FM
 PRODUCT_PACKAGES += \
@@ -239,11 +250,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     ipacm \
     IPACM_cfg.xml
-
-# IR
-PRODUCT_PACKAGES += \
-    android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service
 
 # IRSC
 PRODUCT_COPY_FILES += \

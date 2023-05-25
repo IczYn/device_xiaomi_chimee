@@ -7,7 +7,7 @@
 DEVICE_PATH := device/xiaomi/chime/lime
 
 # Include common platform configs
-include device/xiaomi/chime/BoardConfig-chime.mk
+include device/xiaomi/chime/BoardConfigCommon.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := lime,lemon,pomelo,chime,juice

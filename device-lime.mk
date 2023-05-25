@@ -7,7 +7,7 @@
 PRODUCT_HARDWARE := lime
 
 # Include common platform configs
-include device/xiaomi/chime/chime.mk
+include device/xiaomi/chime/bengal.mk
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \

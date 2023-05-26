@@ -118,8 +118,7 @@ vendor.camera.aux.packageexcludelist=org.telegram.messenger,tw.nekomimi.nekogram
 persist.vendor.camera.logInfoMask=false
 
 # Chipset
-ro.soc.manufacturer=Qualcomm
-ro.soc.model=SM6115
+ro.soc.manufacturer=QTI
 
 # Crypto
 ro.crypto.allow_encrypt_override=true

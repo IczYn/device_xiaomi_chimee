@@ -5,13 +5,13 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/proton_citrus.mk \
-    $(LOCAL_DIR)/proton_lime.mk
+    $(LOCAL_DIR)/colt_citrus.mk \
+    $(LOCAL_DIR)/colt_lime.mk
 
 COMMON_LUNCH_CHOICES := \
-    proton_citrus-user \
-    proton_citrus-userdebug \
-    proton_citrus-eng \
-    proton_lime-user \
-    proton_lime-userdebug \
-    proton_lime-eng
+    colt_citrus-user \
+    colt_citrus-userdebug \
+    colt_citrus-eng \
+    colt_lime-user \
+    colt_lime-userdebug \
+    colt_lime-eng

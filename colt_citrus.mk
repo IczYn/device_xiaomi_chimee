@@ -10,9 +10,11 @@ $(call inherit-product, device/xiaomi/chime/device-citrus.mk)
 # Inherit some common Derpfest stuff stuff.
 $(call inherit-product, vendor/colt/config/common.mk)
 TARGET_BOOT_ANIMATION_RES := 1080
-PROTON_BUILD_VARIANT := OFFICIAL
 TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_ENABLE_BLUR := true
+COLT_BUILD_MAINTAINER := IczYn
+WITH_GAPPS := true
+
 
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := colt_citrus
